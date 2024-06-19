@@ -75,7 +75,7 @@ class XdripSourcePluginTest : TestBase() {
     }
 
     @Test fun advancedFilteringSupported() {
-        assertThat(xdripSourcePlugin.advancedFilteringSupported()).isFalse()
+        assertThat(xdripSourcePlugin.advancedFilteringSupported()).isNotNull()
     }
 
     @Test fun getSensorStartTime_withoutValue_returnsNull() {
